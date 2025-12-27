@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pine Wood — Media</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/pinewood-flag.png" alt="Pine Wood flag" />
+      <div class="title">
+        <strong>Pine Wood</strong>
+        <span>Rust • Shadow • Tradition</span>
+      </div>
+    </a>
+
+    <button class="menuBtn" data-menu-btn aria-expanded="false" aria-label="Open menu">Menu</button>
+
+    <nav>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink active" href="media.html">Media</a>
+      <a class="navlink" href="members.html">Members</a>
+    </nav>
+  </div>
+
+  <div class="container mobileNav" data-mobile-nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="media.html">Media</a>
+    <a href="members.html">Members</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="card">
+      <div class="cardPad">
+        <div class="kicker">Media</div>
+        <h1>Gallery</h1>
+        <p>Add your photos and media here. These tiles are placeholders you can replace with real images later.</p>
+
+        <div class="gallery">
+          <div class="mediaTile"><div class="label">Poster / Artwork <span class="meta">Replace with an image</span></div></div>
+          <div class="mediaTile"><div class="label">Event Photo <span class="meta">Replace with an image</span></div></div>
+          <div class="mediaTile"><div class="label">Community Work <span class="meta">Replace with an image</span></div></div>
+          <div class="mediaTile"><div class="label">Press / Links <span class="meta">Add external references</span></div></div>
+          <div class="mediaTile"><div class="label">Archive <span class="meta">Past highlights</span></div></div>
+          <div class="mediaTile"><div class="label">Behind the Scenes <span class="meta">Team moments</span></div></div>
+        </div>
+
+        <hr class="sep" />
+        <div class="small">
+          Want real thumbnails? Put images in <code>assets/</code> and I’ll wire up a clean responsive grid.
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="small">© <span id="y"></span> Pine Wood</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

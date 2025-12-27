@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pine Wood — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="A rustic, dark, eastern-inspired site template for a lawful organization or community group." />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/pinewood-flag.png" alt="Pine Wood flag" />
+      <div class="title">
+        <strong>Pine Wood</strong>
+        <span>Rust • Shadow • Tradition</span>
+      </div>
+    </a>
+
+    <button class="menuBtn" data-menu-btn aria-expanded="false" aria-label="Open menu">Menu</button>
+
+    <nav>
+      <a class="navlink active" href="index.html">Home</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="media.html">Media</a>
+      <a class="navlink" href="members.html">Members</a>
+    </nav>
+  </div>
+
+  <div class="container mobileNav" data-mobile-nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="media.html">Media</a>
+    <a href="members.html">Members</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container heroGrid">
+      <div class="card">
+        <div class="cardPad">
+          <div class="kicker">Pine Wood</div>
+          <h1>Rustic. Dark. Eastern-inspired.</h1>
+          <p>
+            This is a clean, moody template for a <b>lawful organization or community group</b>.
+            Swap the text to match your mission, history, and community—without changing the design.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="about.html">Read the story</a>
+            <a class="btn" href="media.html">View media</a>
+            <a class="btn" href="members.html">Members</a>
+          </div>
+
+          <hr class="sep" />
+
+          <div class="notice">
+            Note: I can’t help build a site that promotes or supports an armed militia or violence.
+            If this is for a lawful club/association, you’re good to customize this.
+          </div>
+        </div>
+      </div>
+
+      <div class="card sideBox">
+        <div class="cardPad">
+          <div class="kicker">Quick Links</div>
+          <div class="badgeList">
+            <div class="badge">
+              <strong>Announcements</strong>
+              <span>Post updates, meeting notes, dates, and community news.</span>
+            </div>
+            <div class="badge">
+              <strong>Gallery</strong>
+              <span>Photos, posters, artwork, events, press clips.</span>
+            </div>
+            <div class="badge">
+              <strong>Contact</strong>
+              <span>Add an email like: contact@yourdomain.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="cardPad">
+          <div class="small">Tip: Replace the flag file in <code>assets/pinewood-flag.png</code> and keep the same name.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>What this site includes</h2>
+      <div class="grid3">
+        <div class="card"><div class="cardPad">
+          <div class="kicker">Home</div>
+          <p>Hero layout, calls-to-action, and a strong first impression.</p>
+        </div></div>
+
+        <div class="card"><div class="cardPad">
+          <div class="kicker">Media</div>
+          <p>Clean gallery tiles (easy to swap for real images later).</p>
+        </div></div>
+
+        <div class="card"><div class="cardPad">
+          <div class="kicker">Members</div>
+          <p>Place for resources, rules, or member-only links (non-sensitive).</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="small">
+      © <span id="y"></span> Pine Wood • Built with static HTML/CSS
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

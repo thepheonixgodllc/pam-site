@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pine Wood — About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/pinewood-flag.png" alt="Pine Wood flag" />
+      <div class="title">
+        <strong>Pine Wood</strong>
+        <span>Rust • Shadow • Tradition</span>
+      </div>
+    </a>
+
+    <button class="menuBtn" data-menu-btn aria-expanded="false" aria-label="Open menu">Menu</button>
+
+    <nav>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink active" href="about.html">About</a>
+      <a class="navlink" href="media.html">Media</a>
+      <a class="navlink" href="members.html">Members</a>
+    </nav>
+  </div>
+
+  <div class="container mobileNav" data-mobile-nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="media.html">Media</a>
+    <a href="members.html">Members</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="card">
+      <div class="cardPad">
+        <div class="kicker">About</div>
+        <h1>Origins & purpose</h1>
+        <p>
+          Replace this with your real description: who you are, what you do, how you serve your community,
+          what values you uphold, and how people can contact you.
+        </p>
+
+        <hr class="sep" />
+
+        <h2>Values</h2>
+        <div class="grid3">
+          <div class="card"><div class="cardPad">
+            <div class="kicker">Honor</div>
+            <p>Clear standards. Consistent conduct. Accountability.</p>
+          </div></div>
+          <div class="card"><div class="cardPad">
+            <div class="kicker">Community</div>
+            <p>Support, mutual respect, and practical contribution.</p>
+          </div></div>
+          <div class="card"><div class="cardPad">
+            <div class="kicker">Tradition</div>
+            <p>Old-world aesthetic with modern clarity and safety.</p>
+          </div></div>
+        </div>
+
+        <hr class="sep" />
+
+        <div class="notice">
+          If you want, tell me what “Pine Wood” actually is (club/brand/community group/etc.)
+          and I’ll rewrite all the text to match your tone while keeping it lawful and non-violent.
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="small">© <span id="y"></span> Pine Wood</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pine Wood — Members</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/pinewood-flag.png" alt="Pine Wood flag" />
+      <div class="title">
+        <strong>Pine Wood</strong>
+        <span>Rust • Shadow • Tradition</span>
+      </div>
+    </a>
+
+    <button class="menuBtn" data-menu-btn aria-expanded="false" aria-label="Open menu">Menu</button>
+
+    <nav>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="media.html">Media</a>
+      <a class="navlink active" href="members.html">Members</a>
+    </nav>
+  </div>
+
+  <div class="container mobileNav" data-mobile-nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="media.html">Media</a>
+    <a href="members.html">Members</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="card">
+      <div class="cardPad">
+        <div class="kicker">Members</div>
+        <h1>Member resources</h1>
+        <p>
+          Use this page for general, non-sensitive resources: meeting schedule, community guidelines,
+          public documents, and contact paths.
+        </p>
+
+        <div class="grid3">
+          <div class="card"><div class="cardPad">
+            <div class="kicker">Schedule</div>
+            <p class="small">Add dates/times and location info appropriate for the public.</p>
+          </div></div>
+
+          <div class="card"><div class="cardPad">
+            <div class="kicker">Guidelines</div>
+            <p class="small">Code of conduct, safety expectations, and community standards.</p>
+          </div></div>
+
+          <div class="card"><div class="cardPad">
+            <div class="kicker">Contact</div>
+            <p class="small">members@yourdomain.com (replace with your real email)</p>
+          </div></div>
+        </div>
+
+        <hr class="sep" />
+
+        <div class="notice">
+          If you want a real “members-only” area, the simplest safe way is to host docs behind a private link
+          (e.g., Google Drive permissions) rather than trying to build login systems in static HTML.
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="small">© <span id="y"></span> Pine Wood</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
